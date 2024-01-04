@@ -1,7 +1,7 @@
 # TEMP non-blocking example overview 
 ## Overview
 
-- Application initializes the nrfx_temp driver and starts operating in non-blocking mode (i.e. program waits until reading is taken).
+- Application initializes the nrfx_temp driver and starts operating in non-blocking mode (i.e. program doesn't waits until reading is taken, and read is obtained in HW interrupt handler).
 - Application demonstrates the simple use of the die temperature sensor inside nRF SoCs.
 - Temperature is measured until a number of measurements performed is equal to the value specified by the user
 - Time to take specified amount of readings are measured and printed at the end.
